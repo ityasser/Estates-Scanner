@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backFraem"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activities.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="10dp"
+        android:id="@+id/lay_head"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffbf02"
+            android:text="جدول عرض ردود السائقين"
+            android:layout_gravity="start|center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#656565"
+            android:text="يتم عرض ردود كافة السائقين المتهتمين بتوصيل هذا الطرد, حيث يتم "
+            android:layout_gravity="start|center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_below="@+id/lay_head"
+        android:id="@+id/resp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="اسم السائق"
+            android:layout_gravity="start|center_horizontal"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="الوقت"
+            android:layout_gravity="start|center_horizontal"
+
+            android:gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="التكلفة"
+            android:layout_gravity="start|center_horizontal"
+
+            android:gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text=""
+            android:layout_gravity="start|center_horizontal"
+            android:paddingEnd="@dimen/_3sdp"
+
+            android:gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/resp"
+        android:layout_above="@+id/go_to_next"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/service_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:fastScrollEnabled="true"
+        android:dividerHeight="5dp"
+        android:divider="#fafafa"
+android:background="@color/white"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <Button
+        android:id="@+id/go_to_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bac_yaowll"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="start"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:text="اعتماد السائق"
+        android:layout_marginStart="20dp"/>
+
+</RelativeLayout>

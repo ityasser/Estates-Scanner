@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfd0cc"
+    tools:context="ps.getit.app.activities.SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/logo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LOADING"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/MagicProgressBar"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MagicProgressBar"
+android:layout_alignParentBottom="true"
+        >
+
+        <com.liulishuo.magicprogresswidget.MagicProgressBar
+            android:id="@+id/mpb"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            app:mpb_fill_color="#7380a5"
+            app:mpb_background_color="#abb1c2"
+
+
+            app:mpb_flat="true"
+
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

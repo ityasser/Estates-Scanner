@@ -1,0 +1,21 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp"
+    android:ellipsize="marquee"
+
+
+
+    android:layout_height="40dp"
+    android:layout_gravity="center_horizontal"
+
+    android:layout_marginTop="12dp"
+    android:gravity="center"
+    android:hint="@string/name_rust"
+    android:textColor="#000000"
+    android:textColorHint="#000000"
+
+    android:textSize="12dp"
+    />

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layoutDirection="rtl">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:id="@+id/resp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="22222222222 8/8/2018"
+            android:id="@+id/date"
+            android:layout_gravity="start|center_horizontal|center_vertical"
+            android:paddingEnd="@dimen/_3sdp"
+            android:gravity="start"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="نقدا"
+            android:layout_gravity="start|center_horizontal|center_vertical"
+            android:paddingEnd="@dimen/_3sdp"
+
+            android:id="@+id/type"
+            android:gravity="start"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="بطاقة"
+            android:layout_gravity="start|center_horizontal|center_vertical"
+            android:paddingEnd="@dimen/_3sdp"
+
+            android:id="@+id/cateri"
+            android:gravity="start"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="20"
+            android:layout_gravity="start|center_horizontal|center_vertical"
+            android:paddingEnd="@dimen/_3sdp"
+
+            android:id="@+id/price"
+            android:gravity="start"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/up"
+            android:id="@+id/img_type"
+            android:padding="@dimen/_3sdp"
+            android:layout_gravity="start|center_horizontal|center_vertical"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_below="@+id/resp"
+        android:background="#d7d4d4"/>
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backFraem"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activities.SplashActivity">
+
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:id="@+id/logog"
+        android:src="@drawable/logo_welcom"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/logog"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_grd"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#656565"
+                android:text="رقم الطلبية"
+                android:padding="@dimen/_5sdp"
+
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="000"
+                android:padding="@dimen/_5sdp"
+
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/order_id1"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:text="هناك رد "
+            android:textColor="@color/colorPrimary"
+
+            android:id="@+id/response"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+
+            android:visibility="visible"
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/_50sdp"
+        android:id="@+id/accept"
+android:padding="@dimen/_5sdp"
+        android:src="@drawable/okkk"/>
+<ImageView
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="@dimen/_70sdp"
+    android:layout_margin="@dimen/_50sdp"
+android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/cancel"
+    android:padding="@dimen/_5sdp"
+    android:src="@drawable/cansell"/>
+
+
+</RelativeLayout>

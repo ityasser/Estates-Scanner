@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainn"
+    android:weightSum="1"
+    android:layoutDirection="rtl"
+
+    android:background="#f4f6f5">
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/AppBarLayout"
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_below="@+id/AppBarLayout"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_gravity="start"
+            android:id="@+id/lielift"
+            android:background="#f4f4f4"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/heder"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/prof"
+                        android:src="@drawable/perf"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/colorPrimary"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:focusable="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#878686"
+                        android:text="اسم المستخدم"
+                        android:id="@+id/uname"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:textStyle="bold"
+
+                        />
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffbf02"
+                            android:text="@string/prfile"
+                            android:layout_gravity="start|center_horizontal"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:layout_alignParentStart="true"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/available"
+                            android:textColor="#656565"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/sdsd"
+                            android:visibility="gone"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toStartOf="@+id/switchForActionBar"
+
+                            />
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switchForActionBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            app:theme="@style/Color1SwitchStyle"
+                            android:textOff="OFF"
+                            android:textOn="ON"
+                            app:showText="true"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            app:switchTextAppearance="@style/BrandedSwitch.text"
+                            app:switchMinWidth="@dimen/_50sdp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:id="@+id/lay_bputom"
+                    android:layout_below="@+id/heder"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_home"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#656565"
+                            android:text="عدد الطلبيات"
+                            android:layout_gravity="start|center_horizontal"
+
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="0"
+                            android:id="@+id/count"
+                            android:layout_gravity="start|center_horizontal"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_home"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#656565"
+                            android:text="قيمة الطلبيات"
+                            android:layout_gravity="start|center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+
+                            android:gravity="center"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="0 $"
+                            android:id="@+id/price"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_gravity="start|center_horizontal"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/left_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:choiceMode="singleChoice"
+                    android:state_activated="true"
+
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:layout_below="@+id/lay_bputom"
+                    android:background="#f4f4f4"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- As the main content view, the view below consumes the entire
+             space available using match_parent in both dimensions. -->
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/AppBarLayout"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+</RelativeLayout>

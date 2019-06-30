@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#354a87</color>
+    <color name="colorPrimaryDark">#273f7d</color>
+    <color name="colorAccent">#7e7d7e</color>
+
+    <color name="dayPressed">#cc3333</color>
+    <color name="daySelected">#cc3333</color>
+    <color name="dayDeselected">@android:color/darker_gray</color>
+
+    <color name="colorRouteLine">#cc3333</color>
+
+    <color name="backFraem">#f4f4f4</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#7e7d7e</color>
+    <color name="label">#525252</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="star">#ffd200</color>
+
+    <color name="black">#000000</color>
+    <color name="blue">#27a9e3</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="purple">#9C27B0</color>
+    <color name="red2">#cc0000</color>
+
+
+    <color name="red">#F44336</color>
+    <color name="green">#28b779</color>
+    <color name="green_dark">#2BBBAD</color>
+    <color name="pink">#E91E63</color>
+    <color name="blue_dark">#3F51B5</color>
+    <color name="lime">#CDDC39</color>
+    <color name="blue_grey">#607D8B</color>
+    <color name="brown">#795548</color>
+    <color name="orange">#FF9800</color>
+    <color name="amber">#FFC107</color>
+    <color name="deepOrange">#FF5722</color>
+    <color name="customYellow">#FDD835</color>
+    <color name="new_gray">#767676</color>
+    <color name="orange_2">#fe8301</color>
+    <color name="ok_order">#179456</color>
+    <color name="ok_order2">#007129</color>
+
+    <color name="prossing">#0196fe</color>
+    <color name="Connecting">#ff9c00</color>
+    <color name="Delivered">#f723fa</color>
+    <color name="cansel">#d61414</color>
+    <color name="bachom">#ed5a20</color>
+    <color name="prossing_dlirvary">#ff9c00</color>
+
+
+
+    <color name="hintColor">#CCCCCC</color>
+    <color name="textColor">#000</color>
+
+    <color name="underline_default_color">#DDD</color>
+    <color name="underline_selected_color">#0ada7c</color>
+    <color name="error_color">#FF0000</color>
+    <color name="text_color">#000</color>
+
+</resources>

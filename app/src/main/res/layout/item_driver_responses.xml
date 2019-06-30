@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+
+        android:id="@+id/resp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="اسم السائق"
+            android:id="@+id/name_driver"
+            android:layout_gravity="start|center_vertical"
+            android:gravity="start"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="الوقت"
+            android:layout_gravity="start|center_vertical"
+
+            android:id="@+id/time"
+            android:gravity="start"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="التكلفة"
+            android:layout_gravity="start|center_vertical"
+android:id="@+id/price"
+            android:gravity="start"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:layout_height="@dimen/_30sdp">
+            <CheckBox
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:textColor="@color/colorPrimary"
+                android:text=""
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/is_seclected"
+                android:button="@drawable/check_circle2"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e3e3"
+        android:layout_below="@+id/resp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+</RelativeLayout>

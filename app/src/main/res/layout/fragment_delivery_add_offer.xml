@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/backFraem"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+    xmlns:map="http://schemas.android.com/tools"
+
+    tools:context=".activities.MainActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="10dp"
+            android:id="@+id/lay_head"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffbf02"
+                android:text="رقم الطلبية : 121321"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/order_id"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#656565"
+                android:text="التفـــاصيل"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lay_head"
+        android:id="@+id/lay_bputom"
+        android:background="@drawable/border_home"
+
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_7sdp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#656565"
+                android:text="عنوان المرسل"
+                android:layout_gravity="start|center_horizontal"
+
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="غزة"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:id="@+id/sender_address"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+
+            android:background="#d7d4d4"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_7sdp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#656565"
+                android:text="عنوان المستلم"
+                android:layout_gravity="start|center_horizontal"
+
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="دوارة المنارة"
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:id="@+id/recipient_address"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ps.getit.app.Custom.CustomMapView
+        android:id="@+id/mapView"
+        android:layout_below="@+id/lay_bputom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:fastScrollEnabled="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/_10sdp"
+        map:uiCompass="true"
+        map:zOrderOnTop="true"
+        map:uiZoomControls="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapView"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/border_grd"
+            android:textColor="@color/colorPrimary"
+            android:text="الوقت المتوقع"
+            android:paddingEnd="@dimen/_10sdp"
+            android:drawableEnd="@drawable/time"
+            android:layout_gravity="start|center_vertical|center_horizontal"
+            />
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_grd"
+            android:drawablePadding="5dp"
+            android:hint="أدخل السعر المطلوب"
+            android:inputType="number"
+            android:drawableEnd="@drawable/price"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:textColorHint="#c9c9c9"
+            android:textSize="12dp"
+            />
+
+        <Button
+            android:id="@+id/go_to_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/bac_yaowll"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+
+            android:textColor="@color/white"
+            android:text="ارسال النموزج"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

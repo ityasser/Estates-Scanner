@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:background="@color/backFraem"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        tools:context=".activities.SplashActivity">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="10dp"
+
+            android:layout_gravity="center_vertical|center_horizontal"
+
+            android:gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffbf02"
+                android:text="بيانات المرسل اليه ..."
+                android:layout_gravity="start|center_horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                />
+
+
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_grd"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/user"
+                android:gravity="center_vertical"
+                android:hint="اسم المرسل اليه"
+                android:textColor="#000000"
+                android:textColorHint="#c9c9c9"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:imeOptions="actionDone"
+
+                android:textSize="12dp"
+                />
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:background="@drawable/border_grd"
+                android:drawablePadding="5dp"
+                android:hint="@string/mobile"
+                android:inputType="number"
+                android:drawableEnd="@drawable/mobile"
+                android:imeOptions="actionDone"
+
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textColorHint="#c9c9c9"
+                android:textSize="12dp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/contry"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_spinner"
+                    android:drawablePadding="5dp"
+                    android:paddingEnd="25dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <Spinner
+                    android:id="@+id/cityy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_spinner"
+                    android:drawablePadding="5dp"
+                    android:paddingEnd="25dp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_grd"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/address"
+                android:gravity="center_vertical"
+                android:hint="أدخل العنوان كاملاً"
+                android:textColor="#000000"
+                android:textColorHint="#c9c9c9"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:imeOptions="actionDone"
+
+                android:textSize="12dp"
+                />
+
+
+            <ps.getit.app.Custom.CustomMapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+                android:fastScrollEnabled="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#ffffff"
+                android:layout_marginTop="@dimen/_10sdp"
+                map:uiCompass="true"
+                map:zOrderOnTop="true"
+                map:uiZoomControls="true"/>
+            <Button
+                android:id="@+id/go_to_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bac_yaowll"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="إرسال الطلب"
+                android:layout_marginStart="20dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTextView">
+        <attr name="font" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LuckyWheelView">
+        <attr name="lkwBackgroundColor" format="color" />
+        <attr name="lkwCursor" format="reference" />
+        <attr name="lkwCenterImage" format="reference" />
+        <attr name="lkwTextColor" format="color" />
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="CodeInputView">
+        <attr name="underline_color" format="color"/>
+        <attr name="underline_selected_color" format="color"/>
+        <attr name="underline_width" format="dimension"/>
+        <attr name="underline_stroke_width" format="dimension"/>
+        <attr name="underline_selected_stroke_width" format="dimension"/>
+        <attr name="underline_error_stroke_width" format="dimension"/>
+        <attr name="underline_section_reduction" format="dimension"/>
+        <attr name="code_text_color" format="color"/>
+        <attr name="code_text_size" format="dimension"/>
+        <attr name="code_text_margin_bottom" format="dimension"/>
+        <attr name="error_color" format="color"/>
+        <attr name="error_text_color" format="color"/>
+        <attr name="error_text_size" format="dimension"/>
+        <attr name="error_text_margin_top" format="dimension"/>
+        <attr name="length_of_code" format="integer"/>
+        <attr name="animate_on_complete" format="boolean"/>
+        <attr name="on_complete_delay" format="integer"/>
+        <attr name="input_type" format="enum">
+            <enum name="text" value="1" />
+            <enum name="numeric" value="2" />
+        </attr>
+        <attr name="password_mode" format="boolean"/>
+        <attr name="show_password_while_typing" format="boolean"/>
+        <attr name="time_character_is_shown_while_typing" format="integer"/>
+        <attr name="password_character" format="string"/>
+        <attr name="show_keyboard" format="boolean"/>
+    </declare-styleable>
+
+</resources>
