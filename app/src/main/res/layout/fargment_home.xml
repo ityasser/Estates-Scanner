@@ -30,6 +30,8 @@ android:layout_alignParentTop="true"
         android:text="Finding the appropriate apartment is easy? Well, you’ll change your mind!”
 Start now the right way to compare between two apartments in two regions and choose the best!"
         android:textDirection="ltr"
+        android:textAlignment="viewStart"
+
         android:background="@drawable/border_grd"
         android:textSize="@dimen/_14sdp"
         android:textStyle="bold"
