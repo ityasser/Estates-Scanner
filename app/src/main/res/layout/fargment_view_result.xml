@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffbf02"
+        android:text="Comparative results between the two points"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:id="@+id/sss"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start|center_vertical"
+android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/rw"
+        android:layout_below="@+id/sss"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Criteria"
+            android:gravity="start|center_vertical"
+            android:id="@+id/Criteria"
+            android:button="@drawable/check_circle"
+            android:textStyle="bold"
+
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13sdp"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Region1"
+            android:gravity="center"
+            android:id="@+id/scor1"
+            android:button="@drawable/check_circle"
+            android:textStyle="bold"
+
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13sdp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Region2"
+            android:gravity="center"
+            android:id="@+id/scor2"
+            android:button="@drawable/check_circle"
+            android:textStyle="bold"
+
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13sdp"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notfi_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:fastScrollEnabled="true"
+        android:dividerHeight="1dp"
+        android:divider="#fafafa"
+        android:layout_above="@+id/winning"
+
+
+        android:layout_below="@+id/rw"
+        android:background="#fafafa"
+
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Region2"
+        android:gravity="center"
+        android:id="@+id/winning"
+        android:button="@drawable/check_circle"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+    <Button
+        android:id="@+id/go_to_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bac_yaowll"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start"
+        android:textSize="@dimen/_13sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:text="try agin"
+        android:layout_marginStart="20dp"/>
+</RelativeLayout>

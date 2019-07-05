@@ -4,44 +4,41 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal">
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#ffbf02"
-        android:text="@string/prfile"
-        android:layout_gravity="start|center_horizontal"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:textSize="@dimen/_15sdp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        android:layout_alignParentStart="true"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/available"
-        android:textColor="#656565"
-        android:layout_centerVertical="true"
-        android:id="@+id/sdsd"
-        android:visibility="gone"
-        android:layout_marginEnd="10dp"
-        android:layout_toStartOf="@+id/switchForActionBar"
-
-        />
-    <android.support.v7.widget.SwitchCompat
-        android:id="@+id/switchForActionBar"
-        android:layout_width="@dimen/_120sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/heder"
         android:layout_centerHorizontal="true"
-        app:theme="@style/Color1SwitchStyle"
-        android:textOff="OFF"
-        android:textOn="ON"
-        app:showText="true"
-        app:switchTextAppearance="@style/BrandedSwitch.text"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
 
-        />
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/prof"
+            android:src="@drawable/perf"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:focusable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#878686"
+            android:text="مرحبا بك"
+            android:id="@+id/uname"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>

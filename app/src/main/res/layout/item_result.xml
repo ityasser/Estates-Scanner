@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layoutDirection="ltr"
+
+    android:paddingBottom="4dp"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Choose Properties"
+        android:layout_gravity="start"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/namec_pro"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="@dimen/_15sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Criteria"
+        android:gravity="start|center_vertical"
+        android:id="@+id/Criteria"
+        android:button="@drawable/check_circle"
+        android:textStyle="bold"
+
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/_13sdp"
+        />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="50"
+            android:gravity="center"
+            android:id="@+id/scor1"
+            android:button="@drawable/check_circle"
+            android:textStyle="bold"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13sdp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="20"
+            android:gravity="center"
+            android:id="@+id/scor2"
+            android:button="@drawable/check_circle"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13sdp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

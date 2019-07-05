@@ -1,58 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ps.getit.app">
+    package="points.comparison.app">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application
-        android:name=".App"
+        android:name="points.comparison.app.App"
         android:allowBackup="true"
         android:configChanges="locale"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:replace="android:icon,android:supportsRtl,configChanges">
-        <service
-            android:name=".gcm.MyFirebaseMessagingService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-        <service android:name=".utils.LocationService" />
+        android:networkSecurityConfig="@xml/network_security_config"
 
-        <meta-data
-            android:name="firebase_messaging_auto_init_enabled"
-            android:value="true" />
-        <meta-data
-            android:name="firebase_analytics_collection_enabled"
-            android:value="true" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/logo" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorAccent" />
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:supportsRtl,configChanges"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBIPLG8S1QjghfKk2KcOYlSpyrtHKoN4to" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_channel_id"
-            android:value="@string/default_notification_channel_id" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
@@ -60,20 +35,14 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="points.comparison.app.activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.BaseActivity"
+            android:name="points.comparison.app.activities.BaseActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.LoginActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.RegUserActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.SplashActivity"
+            android:name="points.comparison.app.activities.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter>
@@ -82,30 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.DetailsUserRequestsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.DetailsDdliveryRequestsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.TrackingParcelActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.DeliveryAddOfferActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.TermsPoliciesActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".activities.ResponsesFromNotificationsActivity"
-            android:screenOrientation="portrait"
-            android:noHistory="true"
-            android:persistent="true"
-            android:showOnLockScreen="true"
-            android:theme="@style/AppFullScreenTheme"
-            />
-
-
 
 
     </application>

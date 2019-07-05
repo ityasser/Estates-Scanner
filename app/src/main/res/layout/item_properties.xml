@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+        android:paddingBottom="4dp"
+android:layout_marginStart="@dimen/_10sdp"
+    android:layoutDirection="ltr"
+
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Choose Properties"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/namec_pro"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_10sdp"
+
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="#525252"
+        android:gravity="start"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"
+        android:text="طلبية 200"
+        android:id="@+id/namec"
+
+        android:visibility="gone"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="salarles"
+        android:gravity="start|center_vertical"
+        android:id="@+id/is_seclected"
+        android:button="@drawable/check_circle"
+        android:textStyle="bold"
+
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/_13sdp"
+        android:paddingStart="@dimen/_10sdp"
+        />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

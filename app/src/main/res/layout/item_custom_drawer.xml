@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layoutDirection="rtl"
     android:background="#f4f4f4"
+    android:layoutDirection="ltr"
+
     android:layout_height="wrap_content" >
 
     <LinearLayout
@@ -27,9 +28,11 @@
 
             <ImageView
                 android:id="@+id/drawer_icon"
-                android:layout_width="25dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
 
+                android:src="@drawable/placeholder"
+                android:tint="#1396e2"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp" />
 
@@ -40,11 +43,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/colorPrimary"
 
-                android:text=""
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
+                android:text="test"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:textStyle="bold"
-                android:textSize="13dp" />
+                android:textSize="@dimen/_13sdp" />
 
             <TextView
                 android:layout_width="wrap_content"

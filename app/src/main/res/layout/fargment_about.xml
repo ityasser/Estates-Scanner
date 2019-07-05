@@ -22,16 +22,18 @@
             android:layout_width="200dp"
             android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="30dp"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/icon"/>
         <TextView
 
+            android:lineSpacingMultiplier="1.2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="@string/about"
             tools:ignore="MissingPrefix"
-            android:gravity="center"
+            android:gravity="start"
             android:layout_marginTop="30dp"
             android:layout_margin="20dp"
+            android:textDirection="ltr"
 
             />
 

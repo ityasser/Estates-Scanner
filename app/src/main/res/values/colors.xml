@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#354a87</color>
-    <color name="colorPrimaryDark">#273f7d</color>
+    <color name="colorPrimary">#1396e2</color>
+    <color name="colorPrimaryDark">#2688C4</color>
     <color name="colorAccent">#7e7d7e</color>
 
     <color name="dayPressed">#cc3333</color>
